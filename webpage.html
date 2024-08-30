@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MananInCode</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            font-family: "Gill Sans", sans-serif;
+        }
+
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            color: white;
+            padding: 0rem 1.5rem;
+        }
+
+        .name{
+            color: white;
+            font-size: 35px;
+            border-bottom: 2px solid transparent;
+            padding: 2rem;
+            text-decoration: none;
+        }
+
+        nav{
+            width: 100%;
+            background-color: black;
+            overflow: auto;
+        }
+
+        nav a{
+            flex: 1;
+            float: right;
+            padding: 35px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav a:hover{
+            border-bottom: 2px solid white;
+            transition: border-bottom 0.4s ease-in;
+        }
+
+        .image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image .img-logo{
+            margin: 120px;
+            height: 500px;   
+            width: auto;
+            position: relative;
+            border-radius: 25px;
+        }
+        .image .img-logo:hover{
+            box-shadow: 0px 5px 20px 10px rgba(255, 255, 255, 0.683);
+        }
+    
+        section{
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            /* width: 100%; */
+            /* padding: 90px 0; */
+        }
+        
+        .mypic{
+            height: auto;
+            width: 500px;
+            border: 2px solid white;
+            border-radius: 15%;
+        }
+        
+        .about{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 1130px;
+            max-width: 85%;
+            margin: auto;
+        }
+        
+        .text{
+            width: 540px;
+        }
+        
+        .text h2{
+            color: white;
+            font-size: 100px;
+            font-weight: 1;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .text  h5{
+            color: white;
+            font-size: 35px;
+            font-weight: 700;
+            margin: 25px;
+        }
+        
+        .text p{
+            color: white;
+            font-size: 19px;
+            line-height: 30px;
+            letter-spacing: 1px;
+        }
+
+        aside ul{
+            color: white;
+            margin: 25px;
+            line-height: 35px;
+            font-size: 20px;
+            font-weight: 500; 
+        }
+
+        hr{
+            border: 2px solid white;
+        }
+        
+        .logo-icon{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        nav a .icon{
+            height: 25px;
+            width: auto;
+        }
+
+        footer{
+            color: white;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            left: 0;
+            bottom: 0;
+        }
+
+        footer a{
+            text-decoration: none;
+        }
+
+        .img-icon{
+            height: 30px;
+            width: auto;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+         <a href="#home" class="name">MananInCode</a>
+         <nav>
+             <a href="https://www.instagram.com/mananincode/" target="_blank" class="logo-icon">
+                 <img src="image/instagram.png" alt="Error" class="icon">
+             </a>
+             <a href="https://github.com/abdlmnn" target="_blank" class="logo-icon">
+                 <img src="image/github.png" alt="Error" class="icon">
+             </a>
+             <a href="https://www.linkedin.com/in/abdlmnn" target="_blank" class="logo-icon">
+                 <img src="image/linkedin (1).png" alt="Error" class="icon">
+             </a>
+
+             <a href="#home">Home</a>
+            <a href="#about-me">About</a>
+         </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <div class="image" id="home">
+            <img src="Logo MIC/plain.jpg" alt="Error" class="img-logo">
+        </div>
+
+        <!-- <hr> -->
+
+        <section id="about-me">
+            <div class="about">
+                <img src="image/Profile.png" alt="Error" class="mypic">
+                <article class="text">
+                    <h2 style="color: white;">About</h2>
+                    <hr>
+                    <h5 style="color: white;">I'm Mohammad Abdulmanan</h5>
+                    <p style="color: white;">an IT student at St. Michael's College, who's really into coding and tech stuff. I was born and raised in Kingdom Saudi Arabia when i was a kid i love playing basketball and games on mobile thats the time i got interested in technology, and my dream is to have my own website.</p>
+                    
+                    <aside>
+                        <ul>
+                            Programming Languanges:
+                            <li >C++</li>
+                            <li>Python</li>
+                            <li>Php</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </aside>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <a href="https://www.instagram.com/mananincode/" target="_blank" class="footer-icon">
+            <img src="image/instagram.png" alt="Error" class="img-icon">
+        </a>
+        <a href="https://github.com/abdlmnn" target="_blank" class="footer-icon">
+            <img src="image/github.png" alt="Error" class="img-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/abdlmnn" target="_blank" class="footer-icon">
+            <img src="image/linkedin (1).png" alt="Error" class="img-icon">
+        </a>
+    </footer>
+</body>
+</html>
